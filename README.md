@@ -28,7 +28,7 @@
 
 7) Source the workspace 
 
-'source devel/setup.bash'
+`source devel/setup.bash`
 
 8) Open another terminal and run roscore
 
