@@ -42,4 +42,6 @@
 
 `rosrun turtle assisment.py`
 
-11) Enter your testcase choice from 1 to 5 
+11) Enter your testcase choice from 1 to 5 to run the specific testcase
+
+** Case 1 **
