@@ -11,3 +11,7 @@
 2) Create local workspace 
 
 `mkdir -p catkin_ws/src && cd catkin_ws`
+
+3) Build the workspace
+
+`catkin_make`
