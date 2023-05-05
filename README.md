@@ -37,3 +37,9 @@
 9) Run turtlesim node 
 
 `rosrun turtlesim turtlesim_node`
+
+10) Open code from the directory `catkin_ws/src/turtle/scripts` and find `def main()` which contains the commented testcase functions, un-comment the testcase functions as per the requirement and run the code
+
+11) Run the code using 
+
+`rosrun turtle assisment.py`
