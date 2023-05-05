@@ -38,6 +38,8 @@
 
 `rosrun turtlesim turtlesim_node`
 
-11) Run the code using 
+10) Run the code using 
 
 `rosrun turtle assisment.py`
+
+11) Enter your testcase choice from 1 to 5 
