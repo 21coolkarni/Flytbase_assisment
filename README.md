@@ -4,5 +4,5 @@
 
 
 **setting up the development environment**
-
-`git clone`
+1) Install ros noetic desktop
+`http://wiki.ros.org/noetic/Installation/Ubuntu`
