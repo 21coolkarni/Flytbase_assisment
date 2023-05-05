@@ -15,3 +15,25 @@
 3) Build the workspace
 
 `catkin_make`
+
+4) Clone the repository
+
+` git clone https://github.com/21coolkarni/Flytbase_assisment.git`
+
+5) Copy and pase the turtle package folder to `catkin_ws/src`
+
+6) Build the workspace 
+
+`catkin_make`
+
+7) Source the workspace 
+
+'source devel/setup.bash'
+
+8) Open another terminal and run roscore
+
+`roscore`
+
+9) Run turtlesim node 
+
+`rosrun turtlesim turtlesim_node`
