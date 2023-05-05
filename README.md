@@ -1,4 +1,3 @@
 # Flytbase_assisment
-'''
-git clone
-'''
+
+`git clone`
