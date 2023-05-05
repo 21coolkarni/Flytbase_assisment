@@ -369,7 +369,7 @@ def reach_goal(goalx,goaly):
     y = pose_msg.y
     z = pose_msg.theta
     rate = rospy.Rate(10)
-    rospy.loginfo(CBLUE2 + "Reaching goal x = 1,y = 1" + CEND)
+    rospy.loginfo(CBLUE2 + "Reaching goal x = 5.5,y = 5.5" + CEND)
     while not rospy.is_shutdown() and True:
 
         p_gainv = 0.8                                                       # P value of the PID loop which will control the correction of the velocity error
@@ -504,7 +504,7 @@ def reach_thief_fast(goalx,goaly):
 
 def case1():                                                                
     random_spawn()
-    reach_goal(1,1)
+    reach_goal(5.5,5.5)
     
     
 def case2():
@@ -577,7 +577,8 @@ def main():
     rospy.Subscriber('/rt_real_pose',Pose,rt_real_pose_cb)
     
     time.sleep(1)
-    choice = int(input('Enter the number for the testcase choises = 1, 2, 3, 4, 5'))
+
+    choice = int(input('Enter the number for the testcase choises are 1, 2, 3, 4, 5 : '))
     
     if choice == 1:
         case1()
@@ -590,8 +591,8 @@ def main():
     elif choice == 5:
         case5(5,1)
     else:
-        print('Invalid choise')    
+        print('Invalid choise')
     rospy.spin()
 
 if __name__ == '__main__':
-    main() 
+    main()  
