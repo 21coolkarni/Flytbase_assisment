@@ -577,13 +577,20 @@ def main():
     rospy.Subscriber('/rt_real_pose',Pose,rt_real_pose_cb)
     
     time.sleep(1)
-
-    # case1()
-    # case2()
-    # case3(5,1)
-    # case4()
-    # case5(5,1)
+    choice = int(input('Enter the number for the testcase choises = 1, 2, 3, 4, 5'))
     
+    if choice == 1:
+        case1()
+    elif choice == 2:
+        case2()
+    elif choice == 3:
+        case3(5,1)
+    elif choice == 4:
+        case4()
+    elif choice == 5:
+        case5(5,1)
+    else:
+        print('Invalid choise')    
     rospy.spin()
 
 if __name__ == '__main__':
