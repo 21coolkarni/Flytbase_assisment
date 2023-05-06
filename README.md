@@ -91,6 +91,7 @@
 ## **Case 4**
 
 **Algorithm:**
+
 **Multithreading :** Create a timer object with very short rospy duration for controlling the police turtle to chase down the robber turtle with fast speed.
 - Fast_pt_publisher function will spawn the police turtle after 10 seconds with pt_spawn_bool tag
 - Then it will subscribe to the /rt_real_pose msgs
