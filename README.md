@@ -48,7 +48,7 @@
 
 **Case 1**
 
-Algorithm: 
+**Algorithm:** 
 - Find Euclidian distance from the current point to the desigred point and calculate the speed by multiplying it with a constant p value, as the distance decreases speed decreases and eventually becomes zero
 - Find Desigred angle by using a tan2 function which gives the angle of the disired goal and multiply it with a constant p value, as the angle decreases turning speed decreases and eventually becomes zero 
 - Publish these values with twist msgs
