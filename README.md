@@ -46,7 +46,7 @@
 
 
 
-**Case 1**
+## **Case 1**
 
 **Algorithm:** 
 - Find Euclidian distance from the current point to the desigred point and calculate the speed by multiplying it with a constant p value, as the distance decreases speed decreases and eventually becomes zero
