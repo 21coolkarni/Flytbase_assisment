@@ -49,10 +49,10 @@
 ## **Case 1**
 
 **Algorithm:** 
-- Find Euclidian distance from the current point to the desigred point and calculate the speed by multiplying it with a constant p value, as the distance decreases speed decreases and eventually becomes zero
-- Find Desigred angle by using a tan2 function which gives the angle of the disired goal and multiply it with a constant p value, as the angle decreases turning speed decreases and eventually becomes zero 
-- Publish these values with twist msgs
-- Accept a certain ammount of error while reaching the distance to avoid infinite loop
+- Find Euclidian distance from the current point to the desigred point and calculate the speed by multiplying it with a constant p value, as the distance decreases speed decreases and eventually becomes zero.
+- Find Desigred angle by using a tan2 function which gives the angle of the disired goal and multiply it with a constant p value, as the angle decreases turning speed decreases and eventually becomes zero.
+- Publish these values with twist msgs.
+- Accept a certain ammount of error while reaching the distance to avoid infinite loop.
 
 **Output:**
 <p align="center">
@@ -62,6 +62,10 @@
 
 ## **Case 2**
 
+**Algorithm:**
+- Spawn the turtle at the start of the grid position. 
+- Rotate and move functions move the turtle into desired grid.
+ 
 **Output:**
 
 <p align="center">
@@ -71,6 +75,11 @@
 
 ## **Case 3**
 
+**Algorithm:**
+- Spwn the turtle at a position which is suitable for drawing the circle.
+- Using circle position publish twist msgs which publishes the twist msgs with linear.x as radius and angular,z as speed.
+- **Multithreading :** Create a timer object with rosspy duration of 5 seconds to publish /rt_real_pose and tr_noisy_pose 
+ 
 **Output:**
 
 <p align="center">
