@@ -107,13 +107,13 @@
 ## **Case 5**
 
 **Algorithm:**
-- Algorithm is similar to case4 but this time speed of the turtle is slow so we need to predict the future co-ordinates of the turtle where its going to be at perticular point of time after getting its perticular location and then reach on that position before the robber turtle to catch it
-- We will use predict function which will give the future predicted points of the robber turtle and then use slow_pt_publisher funciton to reach at that perticular location with slower speed than 
-- First of all go to the center of the turtle window as every point on the turtle window is at equal distance from the center position
-- Then record the 3 positions of the robber turtle within 15 seconds
-- Calculate the center of the circle and radius of the circle in which the robber turtle is rotating 
-- Wait for the new '/rt_real_pose' msgs and as soon as the msg arrives calculate the theta of the predicted position of the turtle using atan2 function and then add a constant theta value to the desigred theta which will compensate for slow speed 
-- Go to the predicted position and catch the thief
+- Algorithm is similar to case4 but this time speed of the turtle is slow so we need to predict the future co-ordinates of the turtle where its going to be at perticular point of time after getting its location and then reach on that position before the robber turtle to catch it.
+- We will use predict function which will give the future predicted points of the robber turtle and then use slow_pt_publisher funciton to reach at that perticular location with slower speed than robber turtle.
+- First of all go to the center of the turtle window as every point on the turtle window is at equal distance from the center position which is easy to catch the robber turtle.
+- Then record the 3 positions of the robber turtle within 15 seconds.
+- Calculate the center of the circle and radius of the circle in which the robber turtle is rotating with define_circle function.
+- Wait for the new '/rt_real_pose' msgs and as soon as the msg arrives calculate the theta of the predicted position of the turtle using atan2 function and then add a constant theta value to the desigred theta which will compensate for slow speed. 
+- Go to the predicted position and catch the thief.
 
 **Output:**
 
