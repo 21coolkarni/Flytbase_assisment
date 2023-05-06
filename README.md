@@ -64,7 +64,8 @@
 
 **Algorithm:**
 - Spawn the turtle at the start of the grid position. 
-- Rotate and move functions move the turtle into desired grid.
+- Rotate and move functions will move the turtle into desired grid.
+- Turtle will accelerate till it reaches the mid point of the total distance and then it will decelerate again it reaches the final destination
  
 **Output:**
 
@@ -78,7 +79,7 @@
 **Algorithm:**
 - Spwn the turtle at a position which is suitable for drawing the circle.
 - Using circle position publish twist msgs which publishes the twist msgs with linear.x as radius and angular,z as speed.
-- **Multithreading :** Create a timer object with rosspy duration of 5 seconds to publish /rt_real_pose and tr_noisy_pose 
+- **Multithreading :** Create a timer object with rosspy duration of 5 seconds to publish /rt_real_pose and tr_noisy_pose msgs
  
 **Output:**
 
@@ -89,6 +90,12 @@
 
 ## **Case 4**
 
+**Algorithm:**
+**Multithreading :** Create a timer object with very short rospy duration for controlling the police turtle to chase down the robber turtle with fast speed.
+- Fast_pt_publisher function will spawn the police turtle after 10 seconds with pt_spawn_bool tag
+- Then it will subscribe to the /rt_real_pose msgs
+- Then after getting the position of the thief police turtle will catch the thief with '/rt_real_pose' with faster speed than robber turtle
+
 **Output:**
 
 <p align="center">
@@ -97,6 +104,15 @@
 </p>
 
 ## **Case 5**
+
+**Algorithm:**
+- Algorithm is similar to case4 but this time speed of the turtle is slow so we need to predict the future co-ordinates of the turtle where its going to be at perticular point of time after getting its perticular location and then reach on that position before the robber turtle to catch it
+- We will use predict function which will give the future predicted points of the robber turtle and then use slow_pt_publisher funciton to reach at that perticular location with slower speed than 
+- First of all go to the center of the turtle window as every point on the turtle window is at equal distance from the center position
+- Then record the 3 positions of the robber turtle within 15 seconds
+- Calculate the center of the circle and radius of the circle in which the robber turtle is rotating 
+- Wait for the new '/rt_real_pose' msgs and as soon as the msg arrives calculate the theta of the predicted position of the turtle using atan2 function and then add a constant theta value to the desigred theta which will compensate for slow speed 
+- Go to the predicted position and catch the thief
 
 **Output:**
 
