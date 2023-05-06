@@ -53,6 +53,7 @@
 - Find Desigred angle by using a tan2 function which gives the angle of the disired goal and multiply it with a constant p value, as the angle decreases turning speed decreases and eventually becomes zero 
 - Publish these values with twist msgs
 - Accept a certain ammount of error while reaching the distance to avoid infinite loop
+
 **Output:**
 <p align="center">
 <img width="50%" src ="https://user-images.githubusercontent.com/84247246/236546205-89a8ddae-61f3-4b78-9bdb-0a1278a67ff8.png">
